@@ -21,7 +21,7 @@ connectDB()
         throw error;
     })
     const server = app.listen(process.env.PORT || 3001, () => {
-        console.log(`Server listening on: http://localhost/${process.env.PORT}`)
+        console.log(`Server listening on: http://localhost:${process.env.PORT}`)
     })
 
     // Server error listener - handles port already in use, permission errors, etc.
